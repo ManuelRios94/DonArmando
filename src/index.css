@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: #fdfbf6;
+  color: #1c3021;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Fraunces', Georgia, serif;
+}
+
+/* Utilidad para animar secciones al entrar en viewport (ver hook useScrollReveal) */
+.reveal {
+  opacity: 0;
+}
+.reveal.is-visible {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
