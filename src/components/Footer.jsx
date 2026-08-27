@@ -6,6 +6,7 @@ const NAV_LINKS = [
   { label: 'Cabañas', href: '#cabanas' },
   { label: 'Servicios', href: '#servicios' },
   { label: 'Ubicación', href: '#ubicacion' },
+  { label: 'Normas', href: '#normas' },
   { label: 'Contacto', href: '#contacto' },
 ]
 

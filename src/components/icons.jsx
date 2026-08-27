@@ -197,3 +197,86 @@ export const TreesIcon = ({ className = base }) => (
     <path d="M10 10v10M10 10 7 5l3-3 3 3-3 5ZM17 15v5M17 15l-2.5-4 2.5-3 2.5 3-2.5 4Z" />
   </svg>
 )
+
+export const ClockIcon = ({ className = base }) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <circle cx="12" cy="12" r="9" />
+    <path d="M12 7v5l3.5 2" />
+  </svg>
+)
+
+export const NoPartyIcon = ({ className = base }) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <path d="M4 21 14 11" />
+    <path d="M14 6 12 4M17 9l-2-2M17.5 5.5 16 4M20 8l-2-2" />
+    <path d="m4 21 3-9 6 6z" />
+    <circle cx="18.5" cy="14.5" r="3" fill="none" />
+    <path d="m17 13 3 3M20 13l-3 3" />
+  </svg>
+)
+
+export const NoSmokingIcon = ({ className = base }) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <path d="M3 16h11a2 2 0 1 0 0-4" />
+    <path d="M3 16v3h13v-3M18 16v3M21 16v3" />
+    <path d="M3 3l18 18" />
+  </svg>
+)
+
+export const NoGroupIcon = ({ className = base }) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <path d="M15 21v-1.6a3.6 3.6 0 0 0-3.6-3.6H6.6A3.6 3.6 0 0 0 3 19.4V21" />
+    <circle cx="9" cy="8" r="3.2" />
+    <path d="M17 14.5a3.2 3.2 0 1 0-2.2-5.5" />
+    <path d="M3 3l18 18" />
+  </svg>
+)
+
+export const BroomIcon = ({ className = base }) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <path d="M20 4 10 14" />
+    <path d="M9 13c-2 0-5 1-6.5 4.5C5 18 8 19 10 17c1-1 1.5-2.2 1-3.5" />
+    <path d="m10 14 3 3" />
+  </svg>
+)
+
+export const WarningTriangleIcon = ({ className = base }) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <path d="M12 3 2 20h20L12 3Z" />
+    <path d="M12 10v4M12 17v.01" />
+  </svg>
+)
+
+export const ChildIcon = ({ className = base }) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <circle cx="12" cy="6" r="3" />
+    <path d="M9 21v-5.5L7 13v-2a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v2l-2 2.5V21" />
+  </svg>
+)
+
+export const BulbCheckIcon = ({ className = base }) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <path d="M9 18h6M10 21h4" />
+    <path d="M12 3a6 6 0 0 0-3.6 10.8c.6.5 1 1.2 1 2h5.2c0-.8.4-1.5 1-2A6 6 0 0 0 12 3Z" />
+  </svg>
+)
+
+export const CameraIcon = ({ className = base }) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1Z" />
+    <circle cx="12" cy="13" r="3.2" />
+  </svg>
+)
+
+export const ShieldAlertIcon = ({ className = base }) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <path d="M12 3 4 6v6c0 4.5 3 8 8 9 5-1 8-4.5 8-9V6Z" />
+    <path d="M12 8v5M12 16v.01" />
+  </svg>
+)
+
+export const HeartIcon = ({ className = base }) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <path d="M12 21s-7-4.35-9.5-8.5C.7 9 2 5 5.5 5c2 0 3.5 1.2 4.5 2.6C11 6.2 12.5 5 14.5 5 18 5 19.3 9 21.5 12.5 19 16.65 12 21 12 21Z" />
+  </svg>
+)
