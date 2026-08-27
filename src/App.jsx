@@ -5,6 +5,7 @@ import Cabins from './components/Cabins'
 import Amenities from './components/Amenities'
 import Gallery from './components/Gallery'
 import Location from './components/Location'
+import HouseRules from './components/HouseRules'
 import Testimonials from './components/Testimonials'
 import ContactCTA from './components/ContactCTA'
 import Footer from './components/Footer'
@@ -21,6 +22,7 @@ function App() {
         <Amenities />
         <Gallery />
         <Location />
+        <HouseRules />
         <Testimonials />
         <ContactCTA />
       </main>
