@@ -53,10 +53,12 @@ export default function Footer() {
             <li>{CONTACT_EMAIL}</li>
           </ul>
 
-          {/* Redes sociales de ejemplo: reemplazar hrefs por las cuentas reales */}
+          {/* Redes sociales: reemplazar el href de Facebook por la cuenta real */}
           <div className="flex gap-3 mt-4">
             <a
-              href="#"
+              href="https://www.instagram.com/cabanasdonarmando.pehuenco/?hl=es"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Instagram"
               className="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors"
             >
