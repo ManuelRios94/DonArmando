@@ -2,7 +2,7 @@
 // src/assets/images/ e importalo acá igual que las demás (no usar rutas
 // string sueltas: Vite solo empaqueta y copia al build las que se importan).
 
-import heroImage from '../assets/images/hero-image.jpeg'
+import heroImage from '../assets/images/hero-image.avif'
 import aboutImage from '../assets/images/about-image.jpeg'
 
 import galleryImage18 from '../assets/images/gallery-image-18.jpeg'

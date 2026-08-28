@@ -1,6 +1,11 @@
 import Reveal from './Reveal'
 import { MapPinIcon } from './icons'
 
+// Coordenadas reales del complejo
+const LATITUDE = -38.999993
+const LONGITUDE = -61.553029
+const GOOGLE_MAPS_URL = `https://www.google.com/maps?q=${LATITUDE},${LONGITUDE}`
+
 export default function Location() {
   return (
     <section id="ubicacion" className="py-20 md:py-28 bg-forest-50">
@@ -25,13 +30,23 @@ export default function Location() {
               <p className="text-sm text-forest-800/70">Buenos Aires, Argentina</p>
             </div>
           </div>
+
+          <a
+            href={GOOGLE_MAPS_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 mt-5 text-forest-700 font-semibold text-sm hover:text-forest-900 transition-colors"
+          >
+            <MapPinIcon className="w-4 h-4" />
+            Cómo llegar (Google Maps)
+          </a>
         </Reveal>
 
         <Reveal delay={100}>
           <div className="rounded-2xl overflow-hidden shadow-xl border border-sand-200 h-[350px] sm:h-[420px]">
             <iframe
               title="Ubicación de Don Armando Cabañas en Pehuen-co"
-              src="https://www.google.com/maps?q=Pehuen-co,+Buenos+Aires,+Argentina&output=embed"
+              src={`https://www.google.com/maps?q=${LATITUDE},${LONGITUDE}&z=15&output=embed`}
               width="100%"
               height="100%"
               style={{ border: 0 }}
