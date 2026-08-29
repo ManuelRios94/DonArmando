@@ -53,7 +53,6 @@ export default function Footer() {
             <li>{CONTACT_EMAIL}</li>
           </ul>
 
-          {/* Redes sociales: reemplazar el href de Facebook por la cuenta real */}
           <div className="flex gap-3 mt-4">
             <a
               href="https://www.instagram.com/cabanasdonarmando.pehuenco/?hl=es"
@@ -64,6 +63,7 @@ export default function Footer() {
             >
               <InstagramIcon className="w-4 h-4" />
             </a>
+            {/* Facebook: descomentar y completar el href cuando tengamos la cuenta
             <a
               href="#"
               aria-label="Facebook"
@@ -71,6 +71,7 @@ export default function Footer() {
             >
               <FacebookIcon className="w-4 h-4" />
             </a>
+            */}
           </div>
         </div>
       </div>
