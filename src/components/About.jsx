@@ -26,7 +26,6 @@ export default function About() {
       <div className="max-w-6xl mx-auto px-5 sm:px-8 grid md:grid-cols-2 gap-12 items-center">
         <Reveal>
           <div className="relative">
-            {/* Reemplazar ABOUT_IMAGE en src/config/images.js por una foto real del complejo */}
             <img
               src={ABOUT_IMAGE}
               alt="Vista del complejo Don Armando Cabañas"
