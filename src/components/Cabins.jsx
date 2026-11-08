@@ -1,7 +1,9 @@
+import { useState } from 'react'
 import Reveal from './Reveal'
+import Lightbox from './Lightbox'
 import { CABIN_IMAGES } from '../config/images'
 import { buildWhatsAppLink } from '../config/whatsapp'
-import { BedIcon, SofaIcon, BathIcon, WifiIcon, SnowflakeIcon, UsersIcon } from './icons'
+import { BedIcon, SofaIcon, BathIcon, WifiIcon, SnowflakeIcon, UsersIcon, ZoomInIcon } from './icons'
 
 const AMENITY_PREVIEW = [
   { icon: UsersIcon, label: '2 a 5 personas' },
@@ -14,20 +16,25 @@ const AMENITY_PREVIEW = [
 
 const CABINS = [
   {
-    id: 'medano',
-    name: 'Cabaña Médano',
+    id: 'gaviota',
+    name: 'Cabaña Gaviota',
     image: CABIN_IMAGES.cabana1,
     description: 'Ambiente cálido en madera, ideal para familias o grupos de amigos.',
   },
   {
-    id: 'bosque',
-    name: 'Cabaña Bosque',
+    id: 'mar',
+    name: 'Cabaña Mar',
     image: CABIN_IMAGES.cabana2,
     description: 'Rodeada de verde, con la misma comodidad para tu estadía en Pehuen-co.',
   },
 ]
 
 export default function Cabins() {
+  const [openIndex, setOpenIndex] = useState(null)
+
+  const showPrev = () => setOpenIndex((i) => (i - 1 + CABINS.length) % CABINS.length)
+  const showNext = () => setOpenIndex((i) => (i + 1) % CABINS.length)
+
   return (
     <section id="cabanas" className="py-20 md:py-28 bg-white">
       <div className="max-w-6xl mx-auto px-5 sm:px-8">
@@ -49,13 +56,21 @@ export default function Cabins() {
             <Reveal key={cabin.id} delay={i * 120}>
               <article className="group rounded-2xl overflow-hidden border border-sand-200 shadow-sm hover:shadow-xl transition-shadow bg-sand-50 h-full flex flex-col">
                 {/* Reemplazar CABIN_IMAGES en src/config/images.js por fotos reales de cada cabaña */}
-                <div className="overflow-hidden h-64">
+                <button
+                  type="button"
+                  onClick={() => setOpenIndex(i)}
+                  aria-label={`Ver foto de ${cabin.name} en detalle`}
+                  className="relative overflow-hidden h-64 w-full cursor-zoom-in"
+                >
                   <img
                     src={cabin.image}
                     alt={cabin.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                </div>
+                  <div className="absolute inset-0 bg-forest-900/0 group-hover:bg-forest-900/20 transition-colors flex items-center justify-center">
+                    <ZoomInIcon className="w-7 h-7 text-white opacity-0 group-hover:opacity-100 transition-opacity drop-shadow" />
+                  </div>
+                </button>
 
                 <div className="p-6 sm:p-7 flex flex-col flex-1">
                   <h3 className="font-display text-2xl font-bold text-forest-900 mb-2">
@@ -88,6 +103,16 @@ export default function Cabins() {
           ))}
         </div>
       </div>
+
+      {openIndex !== null && (
+        <Lightbox
+          src={CABINS[openIndex].image}
+          alt={CABINS[openIndex].name}
+          onClose={() => setOpenIndex(null)}
+          onPrev={showPrev}
+          onNext={showNext}
+        />
+      )}
     </section>
   )
 }

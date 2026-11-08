@@ -23,15 +23,16 @@ import galleryImage15 from '../assets/images/gallery-image-15.jpeg'
 import galleryImage16 from '../assets/images/gallery-image-16.jpeg'
 import galleryImage17 from '../assets/images/gallery-image-17.jpeg'
 
+import cabanaGaviotaImage from '../assets/images/cabana-gaviota.jpg'
+import cabanaMarImage from '../assets/images/cabana-mar.jpg'
+
 export const HERO_IMAGE = heroImage
 
 export const ABOUT_IMAGE = aboutImage
 
-// TODO: reemplazar por fotos reales de cada cabaña (agregar el archivo en
-// src/assets/images/ e importarlo como arriba)
 export const CABIN_IMAGES = {
-  cabana1: 'https://picsum.photos/seed/cabana-1/800/600',
-  cabana2: 'https://picsum.photos/seed/cabana-2/800/600',
+  cabana1: cabanaGaviotaImage,
+  cabana2: cabanaMarImage,
 }
 
 export const GALLERY_IMAGES = [
