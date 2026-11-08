@@ -16,7 +16,7 @@ export default function Hero() {
           Pehuen-co · Buenos Aires
         </p>
         <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-5 drop-shadow-lg">
-          Tu descanso frente al mar, entre médanos y bosque
+          Don Armando Cabañas: tu descanso frente al mar, entre médanos y bosque
         </h1>
         <p className="text-sand-100 text-base sm:text-lg max-w-2xl mx-auto mb-10">
           Cabañas equipadas a pocas cuadras de la playa, pensadas para desconectar
