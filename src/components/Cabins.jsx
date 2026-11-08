@@ -55,7 +55,6 @@ export default function Cabins() {
           {CABINS.map((cabin, i) => (
             <Reveal key={cabin.id} delay={i * 120}>
               <article className="group rounded-2xl overflow-hidden border border-sand-200 shadow-sm hover:shadow-xl transition-shadow bg-sand-50 h-full flex flex-col">
-                {/* Reemplazar CABIN_IMAGES en src/config/images.js por fotos reales de cada cabaña */}
                 <button
                   type="button"
                   onClick={() => setOpenIndex(i)}

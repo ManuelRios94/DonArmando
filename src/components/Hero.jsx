@@ -4,7 +4,6 @@ import { HERO_IMAGE } from '../config/images'
 export default function Hero() {
   return (
     <section id="inicio" className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
-      {/* Reemplazar HERO_IMAGE en src/config/images.js por una foto real del complejo/playa */}
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${HERO_IMAGE})` }}

@@ -1,4 +1,3 @@
-// TODO: Reemplazar por el número real de WhatsApp del complejo (formato: código de país + área + número, sin espacios ni signos)
 export const WHATSAPP_NUMBER = '5492916420601'
 
 export const WHATSAPP_DEFAULT_MESSAGE =

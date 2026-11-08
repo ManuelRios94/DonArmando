@@ -25,7 +25,6 @@ export default function Gallery() {
           </p>
         </Reveal>
 
-        {/* Reemplazar GALLERY_IMAGES en src/config/images.js por fotos reales del complejo */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
           {GALLERY_IMAGES.map((src, i) => (
             <Reveal key={src} delay={(i % 4) * 70} className={i === 0 ? 'col-span-2 row-span-2' : ''}>
