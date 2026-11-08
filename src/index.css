@@ -23,3 +23,8 @@ h1, h2, h3, h4 {
 .reveal.is-visible {
   animation: fadeInUp 0.8s ease-out forwards;
 }
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

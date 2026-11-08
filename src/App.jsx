@@ -6,7 +6,8 @@ import Amenities from './components/Amenities'
 import Gallery from './components/Gallery'
 import Location from './components/Location'
 import HouseRules from './components/HouseRules'
-import Testimonials from './components/Testimonials'
+// Testimonios ocultos a pedido: descomentar este import y el <Testimonials /> de abajo para reactivarlos
+// import Testimonials from './components/Testimonials'
 import ContactCTA from './components/ContactCTA'
 import Footer from './components/Footer'
 import WhatsAppFloatingButton from './components/WhatsAppFloatingButton'
@@ -23,7 +24,7 @@ function App() {
         <Gallery />
         <Location />
         <HouseRules />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <ContactCTA />
       </main>
       <Footer />

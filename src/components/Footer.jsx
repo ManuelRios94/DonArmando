@@ -1,4 +1,4 @@
-import { CONTACT_PHONE_DISPLAY, CONTACT_EMAIL } from '../config/whatsapp'
+import { CONTACT_PHONE_DISPLAY } from '../config/whatsapp'
 import { InstagramIcon, FacebookIcon, MapPinIcon } from './icons'
 
 const NAV_LINKS = [
@@ -50,7 +50,6 @@ export default function Footer() {
               <MapPinIcon className="w-4 h-4 shrink-0" /> Pehuen-co, Buenos Aires
             </li>
             <li>{CONTACT_PHONE_DISPLAY}</li>
-            <li>{CONTACT_EMAIL}</li>
           </ul>
 
           <div className="flex gap-3 mt-4">

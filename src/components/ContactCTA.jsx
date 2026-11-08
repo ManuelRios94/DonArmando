@@ -1,6 +1,6 @@
 import Reveal from './Reveal'
-import { buildWhatsAppLink, CONTACT_PHONE_DISPLAY, CONTACT_EMAIL } from '../config/whatsapp'
-import { WhatsAppIcon, PhoneIcon, MailIcon } from './icons'
+import { buildWhatsAppLink, CONTACT_PHONE_DISPLAY } from '../config/whatsapp'
+import { WhatsAppIcon, PhoneIcon } from './icons'
 
 export default function ContactCTA() {
   return (
@@ -30,20 +30,13 @@ export default function ContactCTA() {
             Consultar por WhatsApp
           </a>
 
-          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6 text-sand-100/90 text-sm">
+          <div className="mt-10 flex items-center justify-center gap-6 text-sand-100/90 text-sm">
             <a
               href={`tel:${CONTACT_PHONE_DISPLAY.replace(/[^\d+]/g, '')}`}
               className="flex items-center gap-2 hover:text-white transition-colors"
             >
               <PhoneIcon className="w-4 h-4" />
               {CONTACT_PHONE_DISPLAY}
-            </a>
-            <a
-              href={`mailto:${CONTACT_EMAIL}`}
-              className="flex items-center gap-2 hover:text-white transition-colors"
-            >
-              <MailIcon className="w-4 h-4" />
-              {CONTACT_EMAIL}
             </a>
           </div>
         </Reveal>
