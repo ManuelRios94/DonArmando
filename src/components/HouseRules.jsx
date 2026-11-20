@@ -7,6 +7,7 @@ import {
   NoGroupIcon,
   UsersIcon,
   SofaIcon,
+  BedIcon,
   BroomIcon,
   WarningTriangleIcon,
   ChildIcon,
@@ -46,6 +47,11 @@ const RULES = [
     icon: UsersIcon,
     title: 'Respetar la capacidad',
     text: 'Máxima de la cabaña.',
+  },
+  {
+    icon: BedIcon,
+    title: 'Ropa de cama y toallas',
+    text: 'No se entregan sábanas, ni fundas, ni toallas.',
   },
   {
     icon: SofaIcon,
