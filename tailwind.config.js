@@ -49,6 +49,9 @@ export default {
         display: ['"Fraunces"', 'Georgia', 'serif'],
         sans: ['"Inter"', 'system-ui', 'sans-serif'],
       },
+      zIndex: {
+        modal: '100',
+      },
       animation: {
         'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
         'pulse-slow': 'pulseSlow 2.8s ease-in-out infinite',

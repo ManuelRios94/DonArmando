@@ -37,10 +37,10 @@ export default function Amenities() {
           <p className="uppercase tracking-[0.25em] text-forest-500 text-xs font-semibold mb-3">
             Servicios y comodidades
           </p>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-forest-900 mb-4">
+          <h2 className="font-display text-3xl sm:text-4xl font-bold text-forest-900 mb-4 text-balance">
             Todo lo que necesitás para tu estadía
           </h2>
-          <p className="text-forest-800/70">
+          <p className="text-forest-800/70 text-pretty">
             A 2 cuadras de la playa y a 4 del centro, con acceso a nuestra piscina compartida de 11 metros.
           </p>
         </Reveal>

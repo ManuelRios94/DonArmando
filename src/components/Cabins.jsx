@@ -42,10 +42,10 @@ export default function Cabins() {
           <p className="uppercase tracking-[0.25em] text-forest-500 text-xs font-semibold mb-3">
             Nuestras cabañas
           </p>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-forest-900 mb-4">
+          <h2 className="font-display text-3xl sm:text-4xl font-bold text-forest-900 mb-4 text-balance">
             Dos cabañas, todo lo necesario
           </h2>
-          <p className="text-forest-800/70">
+          <p className="text-forest-800/70 text-pretty">
             Cada cabaña tiene capacidad para 2 a 5 personas y cuenta con el mismo
             equipamiento completo para que no te falte nada.
           </p>

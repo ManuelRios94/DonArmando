@@ -14,10 +14,10 @@ export default function Location() {
           <p className="uppercase tracking-[0.25em] text-forest-500 text-xs font-semibold mb-3">
             Ubicación
           </p>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-forest-900 mb-5">
+          <h2 className="font-display text-3xl sm:text-4xl font-bold text-forest-900 mb-5 text-balance">
             Pehuen-co, Buenos Aires
           </h2>
-          <p className="text-forest-800/80 leading-relaxed mb-6">
+          <p className="text-forest-800/80 leading-relaxed mb-6 text-pretty">
             Don Armando Cabañas está ubicado en Pehuen-co, a 2 cuadras de la playa
             y a 4 cuadras del centro del pueblo. Un lugar tranquilo, ideal como
             punto de partida para disfrutar el mar, los médanos y el bosque.

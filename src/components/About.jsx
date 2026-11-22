@@ -42,15 +42,15 @@ export default function About() {
           <p className="uppercase tracking-[0.25em] text-forest-500 text-xs font-semibold mb-3">
             Sobre nosotros
           </p>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-forest-900 mb-5">
+          <h2 className="font-display text-3xl sm:text-4xl font-bold text-forest-900 mb-5 text-balance">
             Un refugio simple, cómodo y a metros del mar
           </h2>
-          <p className="text-forest-800/80 leading-relaxed mb-4">
+          <p className="text-forest-800/80 leading-relaxed mb-4 text-pretty">
             Don Armando Cabañas es un pequeño complejo de dos cabañas en Pehuen-co,
             pensado para quienes buscan unos días de descanso real: playa, aire libre
             y silencio, sin resignar comodidad.
           </p>
-          <p className="text-forest-800/80 leading-relaxed mb-8">
+          <p className="text-forest-800/80 leading-relaxed mb-8 text-pretty">
             Elegimos Pehuen-co porque todavía conserva lo que muchos balnearios
             perdieron: médanos, bosque de coníferas, playas extensas y esa calma
             de pueblo que invita a bajar un cambio.

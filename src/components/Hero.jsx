@@ -3,7 +3,7 @@ import { HERO_IMAGE } from '../config/images'
 
 export default function Hero() {
   return (
-    <section id="inicio" className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+    <section id="inicio" className="relative h-dvh min-h-[600px] flex items-center justify-center overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${HERO_IMAGE})` }}
@@ -14,10 +14,10 @@ export default function Hero() {
         <p className="uppercase tracking-[0.3em] text-sand-200 text-xs sm:text-sm font-semibold mb-4">
           Pehuen-co · Buenos Aires
         </p>
-        <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-5 drop-shadow-lg">
+        <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-5 drop-shadow-lg text-balance">
           Don Armando Cabañas: tu descanso frente al mar, entre médanos y bosque
         </h1>
-        <p className="text-sand-100 text-base sm:text-lg max-w-2xl mx-auto mb-10">
+        <p className="text-sand-100 text-base sm:text-lg max-w-2xl mx-auto mb-10 text-pretty">
           Cabañas equipadas a pocas cuadras de la playa, pensadas para desconectar
           en familia o con amigos, con la tranquilidad de Pehuen-co.
         </p>
@@ -43,9 +43,9 @@ export default function Hero() {
       <a
         href="#nosotros"
         aria-label="Bajar a la siguiente sección"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/80 animate-bounce"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/80 motion-safe:animate-bounce"
       >
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8">
           <path d="m6 9 6 6 6-6" />
         </svg>
       </a>
