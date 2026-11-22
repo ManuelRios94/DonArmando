@@ -65,7 +65,9 @@ export default function Header() {
           <button
             className={`md:hidden p-2 rounded-md ${scrolled ? 'text-forest-800' : 'text-white'}`}
             onClick={() => setMenuOpen((v) => !v)}
-            aria-label="Abrir menú"
+            aria-label={menuOpen ? 'Cerrar menú' : 'Abrir menú'}
+            aria-expanded={menuOpen}
+            aria-controls="mobile-menu"
           >
             {menuOpen ? <CloseIcon /> : <MenuIcon />}
           </button>
@@ -73,7 +75,7 @@ export default function Header() {
       </div>
 
       {menuOpen && (
-        <div className="md:hidden bg-sand-50 border-t border-sand-200 shadow-lg">
+        <div id="mobile-menu" className="md:hidden bg-sand-50 border-t border-sand-200 shadow-lg">
           <nav className="flex flex-col px-5 py-4 gap-1">
             {NAV_LINKS.map((link) => (
               <a

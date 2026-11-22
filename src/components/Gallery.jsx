@@ -17,10 +17,10 @@ export default function Gallery() {
           <p className="uppercase tracking-[0.25em] text-forest-500 text-xs font-semibold mb-3">
             Galería
           </p>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-forest-900 mb-4">
+          <h2 className="font-display text-3xl sm:text-4xl font-bold text-forest-900 mb-4 text-balance">
             Un vistazo a Don Armando
           </h2>
-          <p className="text-forest-800/70">
+          <p className="text-forest-800/70 text-pretty">
             Fotos ilustrativas del complejo y sus alrededores. Hacé click para verlas en detalle.
           </p>
         </Reveal>

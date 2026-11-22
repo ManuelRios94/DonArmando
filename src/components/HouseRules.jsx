@@ -93,10 +93,10 @@ export default function HouseRules() {
           <p className="uppercase tracking-[0.25em] text-forest-500 text-xs font-semibold mb-3">
             Normas de convivencia
           </p>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-forest-900 mb-4">
+          <h2 className="font-display text-3xl sm:text-4xl font-bold text-forest-900 mb-4 text-balance">
             Para que todos disfrutemos la estadía
           </h2>
-          <p className="text-forest-800/70">
+          <p className="text-forest-800/70 text-pretty">
             Te pedimos respetar estas normas para garantizar una estadía tranquila y
             segura para vos y para el resto de los huéspedes.
           </p>

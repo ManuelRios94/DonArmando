@@ -12,10 +12,10 @@ export default function ContactCTA() {
 
       <div className="relative max-w-3xl mx-auto px-5 sm:px-8 text-center">
         <Reveal>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-white mb-4">
+          <h2 className="font-display text-3xl sm:text-4xl font-bold text-white mb-4 text-balance">
             ¿Listo para tu escapada a Pehuen-co?
           </h2>
-          <p className="text-sand-100/90 mb-10">
+          <p className="text-sand-100/90 mb-10 text-pretty">
             Escribinos por WhatsApp y te contamos disponibilidad, precios y todo lo
             que necesites saber para tu estadía en Don Armando Cabañas.
           </p>
